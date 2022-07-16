@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body {
 	background-color: lightblue;
@@ -10,6 +12,12 @@ body {
 	background-color: #f6b319;
 	border-radius: 0;
 	border: 0;
+	
+}
+
+.navbar-header {
+	height: 100px;
+
 }
 
 .navbar-header h1 { /** REstaurant name **/
@@ -18,11 +26,11 @@ body {
 	text-shadow: 4px 2px 3px #666;
 	line-height: 1.5;
 	font-size: 3.5em;
+	margin-top: -15px;
+
 }
 
-.navbar-header a {
-	float: left;
-}
+
 
 .navbar-header a:hover, .navbar-header a:focus { /** link on Restaurant name **/
 	text-decoration: none;
@@ -69,13 +77,26 @@ h3 {
 }
 
 
+div a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: bold;
+}
+
 /** Large devices **/
 @media (min-width: 1200px) {
+
+.navbar-header h1 {
+	margin-left: -80px;
+}
 .col-lg-4 {
 	width: 31%;
+}
+}
 
-}
-}
+
 
 /** Medium Devices **/
 @media (min-width: 992px) and (max-width: 1199px) {
